@@ -2,3 +2,52 @@
 $LightGrey: rgb(59, 59, 59);
 
 
+@mixin flex($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+
+.Landing {
+    background-color: $LightGrey;
+
+}
+
+#Intro {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Nav {
+    background-color: gray;
+    height: 9vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+// .TestText {
+//     height: 25vh;
+//     width: 70%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     font-size: 10px;
+// }
+
+// @media (min-width: 800px) {
+//     .TestText {
+//         font-size: 25px;
+//     }
+// }
+
+// @media (min-width: 1200px) {
+//     .TestText {
+//         font-size: 30px;
+//     }
+// }
